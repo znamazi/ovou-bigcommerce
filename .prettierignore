@@ -1,0 +1,15 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# Ignore artifacts:
+build
+coverage
+
+
+.vscode-test/
+out/
+dist/
+test-fixtures/
+node_modules/
