@@ -1,4 +1,6 @@
 import GlobalStyle from '../styles/GlobalStyle'
+import '../styles/card2.css'
+import '../styles/metal.css'
 
 const Noop = ({ children }) => <>{children}</>
 

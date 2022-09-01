@@ -21,6 +21,13 @@ const GlobalStyle = createGlobalStyle`
       height:100%;
     }
 
+    :root {
+      --hue: 223;
+      --bg: hsl(var(--hue), 10%, 90%);
+      --fg: hsl(var(--hue), 10%, 10%);
+      --primary: hsl(var(--hue), 90%, 55%);
+      /* font-size: calc(20px + (30 - 20) * (100vw - 320px) / (1280 - 320)); */
+    }
 
     a {
       color: inherit;
