@@ -12,6 +12,8 @@ const Input = styled.input`
 
 const Card2 = () => {
   const [inputValue, setInputValue] = useState('')
+  const [inputValue2, setInputValue2] = useState('')
+
   return (
     <Flex flexDirection={`column`} margin="20px">
       <Input
@@ -22,6 +24,13 @@ const Card2 = () => {
         aria-describedby="card-details-profile-link-feedback"
         aria-invalid="true"
         onChange={(e) => setInputValue(e.currentTarget.value)}
+      />
+      <Input
+        name="handle"
+        value={inputValue2}
+        aria-describedby="card-details-profile-link-feedback"
+        aria-invalid="true"
+        onChange={(e) => setInputValue2(e.currentTarget.value)}
       />
       <div className="card">
         <div className="card__texture"></div>
