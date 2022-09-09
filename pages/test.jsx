@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { Button, Flex } from 'rebass'
 import styled from 'styled-components'
-
+import { isBrowser } from 'react-device-detect'
 const Input = styled.input`
   padding: 15px;
   width: 100%;
@@ -19,10 +19,7 @@ const Test = () => {
     router.push('card2')
     setAlert(true)
   }
-  const isBrowser = () => {
-    return typeof window !== 'undefined'
-  }
-  console.log({ isBrowser: isBrowser() })
+
   return (
     <Flex flexDirection={`column`} margin="30px">
       {alert && <alert backgroundColor="green">success</alert>}
@@ -36,11 +33,11 @@ const Test = () => {
       </Flex>
       <Button backgroundColor="#2de7de" margin={`20px 0`}>
         <a
-          href={isBrowser() ? url : url.replace('https://www.facebook.com', 'fb://profile')}
+          href={isBrowser ? url : url.replace('https://www.facebook.com', 'fb://profile')}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {`link to ${isBrowser() ? url : url.replace('https://www.facebook.com', 'fb://profile')}`}
+          {`link to ${isBrowser ? url : url.replace('https://www.facebook.com', 'fb://profile')}`}
         </a>
       </Button>
 
