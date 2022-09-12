@@ -60,6 +60,8 @@ const Test = () => {
       <a href="fb://facewebmodal/f?href=https://www.facebook.com/abc/">abc Android</a>
       <a href="fb://page/abc">abc page</a>
 
+      <a onClick={() => window.open('https://www.facebook.com/abc/', '_system')}>open with OS</a>
+
       {/* <a href="fb://profile/lifemellow64" target="_blank" rel="noopener noreferrer">
         app facebook
       </a> */}
