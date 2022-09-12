@@ -41,6 +41,8 @@ const Test = () => {
         </a>
       </Button>
       <a href="fb://profile/abc">abc</a>
+      <a href="fb://abc">abc empty</a>
+      <a href="fb://page/abc">abc page</a>
 
       {/* <a href="fb://profile/lifemellow64" target="_blank" rel="noopener noreferrer">
         app facebook
