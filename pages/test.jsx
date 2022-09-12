@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Button, Flex } from 'rebass'
 import styled from 'styled-components'
 import { isBrowser, isAndroid } from 'react-device-detect'
+
 const Input = styled.input`
   padding: 15px;
   width: 100%;
@@ -10,6 +11,13 @@ const Input = styled.input`
   border-radius: 5px;
 `
 const Label = styled.label``
+
+const Link = styled.a`
+  padding: 20px;
+  background: gray;
+  text-align: center;
+  margin-top: 20px;
+`
 
 export const FACEBOOK_APP_IOS_BASE_URL = 'fb://profile/'
 export const FACEBOOK_APP_ANDROID_BASE_URL = 'fb://facewebmodal/f?href=https://www.facebook.com/'
@@ -60,10 +68,11 @@ const Test = () => {
       <a href="fb://facewebmodal/f?href=https://www.facebook.com/abc/">abc Android</a>
       <a href="fb://page/abc">abc page</a>
 
-      <Button backgroundColor={`blue`} onClick={() => window.open('https://www.facebook.com/abc/', '_system')}>
-        open with OS
+      <Button backgroundColor={`blue`}>
+        <a href="fb://page/9465008123">OPen Amazon in facebook app </a>
       </Button>
 
+      <Link href="https://facebook.com/amazon/">OPen amazon in Browser </Link>
       {/* <a href="fb://profile/lifemellow64" target="_blank" rel="noopener noreferrer">
         app facebook
       </a> */}
