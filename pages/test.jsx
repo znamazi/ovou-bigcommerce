@@ -40,6 +40,7 @@ const Test = () => {
           {`link to ${isBrowser ? url : url.replace('https://www.facebook.com', 'fb://page')}`}
         </a>
       </Button>
+      <a href="fb://profile/abc">abc</a>
 
       {/* <a href="fb://profile/lifemellow64" target="_blank" rel="noopener noreferrer">
         app facebook
