@@ -33,11 +33,11 @@ const Test = () => {
       </Flex>
       <Button backgroundColor="#2de7de" margin={`20px 0`}>
         <a
-          href={isBrowser ? url : url.replace('https://www.facebook.com', 'fb://profile')}
+          href={isBrowser ? url : url.replace('https://www.facebook.com', 'fb://page')}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {`link to ${isBrowser ? url : url.replace('https://www.facebook.com', 'fb://profile')}`}
+          {`link to ${isBrowser ? url : url.replace('https://www.facebook.com', 'fb://page')}`}
         </a>
       </Button>
 
